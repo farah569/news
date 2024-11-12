@@ -28,8 +28,12 @@ class AppTheme {
         fontSize: 22,
         fontWeight: FontWeight.bold,
         color: white,
-      )
-
+      ),
+      titleSmall: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w400,
+        color: black,
+      ),
     ),
   );
 }
