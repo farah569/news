@@ -15,12 +15,10 @@ class NewsApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         HomeScreen.routeName: (_) => HomeScreen(),
-
       },
-      initialRoute: HomeScreen.routeName ,
+      initialRoute: HomeScreen.routeName,
       theme: AppTheme.lightTheme,
       themeMode: ThemeMode.light,
-      
     );
   }
 }

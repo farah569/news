@@ -23,43 +23,39 @@ class _HomeScreenState extends State<HomeScreen> {
         color: AppTheme.white,
         image: DecorationImage(
           image: AssetImage('assets/images/pattern.png'),
-           ),
+        ),
       ),
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            selectedCategory!=null
-            ?selectedCategory!.name
-            :SelectedDrawerItem == DrawerItem.categories
-            ?'News App'
-            :'Settings',
-            ),
+            selectedCategory != null
+                ? selectedCategory!.name
+                : SelectedDrawerItem == DrawerItem.categories
+                    ? 'News App'
+                    : 'Settings',
+          ),
         ),
         drawer: HomeDrawer(
           onItemSelected: onDrawerItemSelected,
         ),
-        body: selectedCategory!=null
-        ? CategoryDetails(selectedCategory!.id)
-        :
-        SelectedDrawerItem==DrawerItem.categories
-        ? CategoriesGrid(onCategorySelected: onCategorySelected)
-        :SettingsTab(),
+        body: selectedCategory != null
+            ? CategoryDetails(selectedCategory!.id)
+            : SelectedDrawerItem == DrawerItem.categories
+                ? CategoriesGrid(onCategorySelected: onCategorySelected)
+                : SettingsTab(),
       ),
-      );
+    );
   }
 
-  void onDrawerItemSelected(DrawerItem item){
-    SelectedDrawerItem= item;
-    selectedCategory=null;
+  void onDrawerItemSelected(DrawerItem item) {
+    SelectedDrawerItem = item;
+    selectedCategory = null;
     setState(() {});
     Navigator.of(context).pop();
   }
 
-  void onCategorySelected (CategoryModel Category){
+  void onCategorySelected(CategoryModel Category) {
     selectedCategory = Category;
-    setState(() {
-      
-    });
-
+    setState(() {});
   }
 }

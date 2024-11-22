@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:news/app_theme.dart';
 
 class HomeDrawer extends StatelessWidget {
-   HomeDrawer({
+  HomeDrawer({
     required this.onItemSelected,
   });
 
@@ -10,15 +10,15 @@ class HomeDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle? titleLargeStyle=
-    Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 24);
+    TextStyle? titleLargeStyle =
+        Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 24);
     Size screenSize = MediaQuery.sizeOf(context);
     return SizedBox(
       width: screenSize.width * 0.7,
       child: Column(
         children: [
           Container(
-            height:screenSize.height * 0.2 ,
+            height: screenSize.height * 0.2,
             width: double.infinity,
             color: AppTheme.primary,
             alignment: Alignment.center,
@@ -42,10 +42,9 @@ class HomeDrawer extends StatelessWidget {
                       children: [
                         Icon(Icons.menu),
                         SizedBox(width: 8),
-                        Text(
-                          'Categories',
-                          style: titleLargeStyle?.copyWith(color: AppTheme.black)
-                          ),
+                        Text('Categories',
+                            style: titleLargeStyle?.copyWith(
+                                color: AppTheme.black)),
                       ],
                     ),
                   ),
@@ -56,10 +55,9 @@ class HomeDrawer extends StatelessWidget {
                       children: [
                         Icon(Icons.settings),
                         SizedBox(width: 8),
-                        Text(
-                          'Settings',
-                          style: titleLargeStyle?.copyWith(color: AppTheme.black)
-                          ),
+                        Text('Settings',
+                            style: titleLargeStyle?.copyWith(
+                                color: AppTheme.black)),
                       ],
                     ),
                   ),
@@ -73,7 +71,7 @@ class HomeDrawer extends StatelessWidget {
   }
 }
 
-enum DrawerItem{
+enum DrawerItem {
   categories,
   settings,
 }
