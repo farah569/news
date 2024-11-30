@@ -33,15 +33,22 @@ dependencies:
   timeago: ^3.7.0
   cached_network_image: ^3.4.1
   http: ^1.2.2
+  provider: ^6.1.2
+  url_launcher: ^6.3.1
+
+
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -49,6 +56,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
+  flutter_native_splash: ^2.4.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -65,6 +73,12 @@ flutter:
   assets:
     - assets/images/
     - assets/images/Sports.png
+    - assets/images/Business.png
+    - assets/images/Enviroment.png
+    - assets/images/Science.png
+    - assets/images/Politics.png
+    - assets/images/Health.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

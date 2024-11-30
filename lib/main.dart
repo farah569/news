@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news/app_theme.dart';
-import 'package:news/home_screen.dart';
+import 'package:news/shared/widgets/app_theme.dart';
+import 'package:news/home/view/screens/home_screen.dart';
+
 
 void main() {
   runApp(NewsApp());
